@@ -6,6 +6,10 @@ print("=== Rock Paper Scissors ===")
 
 player = input("Choose rock, paper, or scissors: ").lower()
 
+if player not in choices:
+    print("Invalid choice!")
+    exit()
+
 computer = random.choice(choices)
 
 print(f"Computer chose: {computer}")
