@@ -1,4 +1,4 @@
-# Assignment 10: From Class Diagrams to Code with Creational Patterns
+nano README.md# Assignment 10: From Class Diagrams to Code with Creational Patterns
 
 ## Programming Language Choice
 
@@ -377,3 +377,150 @@ Planned future enhancements:
 - Structured error handling
 - JWT security
 - PostgreSQL integration
+
+# Assignment 13 — CI/CD Pipeline with GitHub Actions
+
+## Overview
+
+This assignment introduces Continuous Integration and Continuous Deployment (CI/CD) practices using GitHub Actions.
+
+The implementation includes:
+- Branch protection rules
+- Automated testing pipelines
+- Pull request validation
+- Release artifact generation
+- Continuous Integration workflows
+
+---
+
+## CI/CD Pipeline
+
+GitHub Actions automatically performs:
+
+### Continuous Integration
+- Build validation
+- Automated testing
+- Dependency caching
+- Pull request verification
+
+### Continuous Deployment
+- Release artifact generation
+- Automated release builds
+
+Workflow location:
+
+```text
+.github/workflows/ci.yml
+```
+
+---
+
+## GitHub Actions Workflow
+
+### Trigger Events
+
+The CI/CD pipeline runs automatically on:
+
+| Event | Description |
+|---|---|
+| Push | Any branch push |
+| Pull Request | PRs targeting main |
+
+---
+
+## Automated Workflow Steps
+
+### Build Pipeline
+- Checkout repository
+- Install Rust toolchain
+- Cache Cargo dependencies
+- Build project
+- Execute tests
+
+### Release Pipeline
+- Build optimized release binaries
+- Upload build artifacts
+
+---
+
+## Branch Protection Rules
+
+Configured branch protection features:
+
+| Protection | Purpose |
+|---|---|
+| Pull Request Reviews | Prevent unreviewed merges |
+| Required Status Checks | Block failing code |
+| Restricted Direct Pushes | Protect main branch |
+
+Documentation:
+
+```text
+PROTECTION.md
+```
+
+---
+
+## Pull Request Workflow
+
+A failing test was intentionally introduced to demonstrate:
+- CI failure detection
+- Merge blocking
+- Automated PR validation
+
+After fixing the test:
+- CI passed successfully
+- Merge became allowed
+
+---
+
+## Screenshots
+
+### Branch Protection
+```text
+screenshots/branch-protection-rules.png
+```
+
+### GitHub Actions Success
+```text
+screenshots/github-actions-tests.png
+```
+
+### Release Artifact
+```text
+screenshots/release-artifact.png
+```
+
+### Pull Request Failure
+```text
+screenshots/pr-blocked-failing-tests.png
+```
+
+### Pull Request Success
+```text
+screenshots/pr-passing-after-fix.png
+```
+
+---
+
+## Benefits of CI/CD
+
+Implemented CI/CD provides:
+- Faster feedback
+- Higher code quality
+- Safer deployments
+- Automated testing
+- Better collaboration
+- Reduced manual errors
+
+---
+
+## Future Improvements
+
+Potential future enhancements:
+- Docker deployment
+- Kubernetes integration
+- Cloud deployment automation
+- Security scanning
+- Code coverage reporting
+- Automated releases
