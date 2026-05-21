@@ -129,3 +129,67 @@ Includes:
 - In-memory implementations
 - Factory abstraction
 - Database stub
+
+
+---
+
+# Assignment 12 Progress
+
+## Added Service Layer
+
+### Implemented Services
+- BookService
+- UserService
+- LoanService
+
+### Business Logic
+- Checkout validation
+- Loan limit validation
+- CRUD service operations
+
+---
+
+## Added REST API
+
+### API Endpoints
+- GET /api/books
+- POST /api/books
+
+### API Features
+- JSON serialization
+- Async routing with Axum
+- In-memory persistence
+
+---
+
+## Added Swagger/OpenAPI
+
+### Documentation Features
+- Swagger UI
+- Endpoint schemas
+- Request/response examples
+
+---
+
+## Added Tests
+
+### Service Tests
+- Loan validation tests
+
+### API Tests
+- REST API placeholder integration tests
+
+---
+
+## Added Screenshots
+
+### Evidence Files
+- api-books-endpoint.png
+- swagger-ui.png
+
+---
+
+## Added Layered Architecture
+
+### Architecture Flow
+Repository → Service → API

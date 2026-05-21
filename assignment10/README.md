@@ -233,3 +233,147 @@ Location:
 ```text
 tests/repository_tests.rs
 ```
+
+
+# Assignment 12 — Service Layer and REST API
+
+## Overview
+
+This assignment extends the repository architecture by adding:
+- Service layer abstraction
+- REST API endpoints
+- Swagger/OpenAPI documentation
+- Business logic validation
+
+The implementation follows a layered architecture:
+
+```text
+Repository → Service → API
+```
+
+---
+
+## Implemented Entities
+
+Minimum required entities implemented:
+- Book
+- User
+- Loan
+
+---
+
+## Service Layer
+
+Service classes encapsulate business logic and repository access.
+
+### Services Implemented
+
+| Service | Responsibility |
+|---|---|
+| BookService | Book management and checkout validation |
+| UserService | User management |
+| LoanService | Loan limit validation |
+
+Location:
+```text
+services/
+```
+
+---
+
+## Business Rules
+
+Implemented validations include:
+- Users cannot borrow more than 5 books
+- Prevent duplicate book checkout
+- Basic CRUD validation
+
+---
+
+## REST API
+
+Implemented REST endpoints:
+
+| Method | Endpoint | Description |
+|---|---|---|
+| GET | /api/books | Fetch all books |
+| POST | /api/books | Create a new book |
+
+Location:
+```text
+api/
+```
+
+---
+
+## API Framework Choice
+
+Axum was selected because it provides:
+- Modern async Rust support
+- Fast performance
+- Clean routing system
+- Strong type safety
+
+---
+
+## Swagger/OpenAPI Documentation
+
+Swagger UI available at:
+
+```text
+http://127.0.0.1:3000/docs
+```
+
+Documentation includes:
+- Endpoint descriptions
+- Request schemas
+- Response schemas
+- API testing support
+
+Location:
+```text
+docs/
+```
+
+---
+
+## Testing
+
+### Service Tests
+- Loan limit validation
+- Business logic verification
+
+### API Tests
+- Endpoint testing
+- Integration placeholder tests
+
+Location:
+```text
+tests/
+```
+
+---
+
+## Screenshot Evidence
+
+### API Endpoint Screenshot
+```text
+screenshots/api-books-endpoint.png
+```
+
+### Swagger UI Screenshot
+```text
+screenshots/swagger-ui.png
+```
+
+---
+
+## Future Improvements
+
+Planned future enhancements:
+- Database persistence
+- Authentication & authorization
+- Full CRUD endpoints
+- Structured error handling
+- JWT security
+- PostgreSQL integration
