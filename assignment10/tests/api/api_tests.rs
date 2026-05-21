@@ -1,5 +1,5 @@
 #[test]
-fn test_api_placeholder() {
+fn failing_test() {
 
-    assert_eq!(2 + 2, 4);
+    assert_eq!(1, 2);
 }
