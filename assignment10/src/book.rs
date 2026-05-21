@@ -1,3 +1,6 @@
+use serde::{Serialize, Deserialize};
+
+#[derive(Clone, Serialize, Deserialize)]
 pub struct Book {
     pub book_id: String,
     pub title: String,
