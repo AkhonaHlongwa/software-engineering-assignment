@@ -1,6 +1,7 @@
 use serde::{Serialize, Deserialize};
+use utoipa::ToSchema;
 
-#[derive(Clone, Serialize, Deserialize)]
+#[derive(Clone, Serialize, Deserialize, ToSchema)]
 pub struct Book {
     pub book_id: String,
     pub title: String,
