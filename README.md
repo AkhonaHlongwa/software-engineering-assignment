@@ -114,3 +114,73 @@ project/
 │
 └── README.md
 ```
+
+
+# Assignment 9: Domain Modeling and Class Diagram Development
+
+## Domain Model Documentation
+
+The domain model identifies the core entities, attributes, methods, relationships, and business rules of the Library Management System.
+
+Location:
+```text
+assignment9/domain-model/domain-model.md
+```
+
+---
+
+## Mermaid.js Class Diagram
+
+The class diagram models:
+- Classes
+- Attributes
+- Methods
+- Associations
+- Multiplicity relationships
+
+Location:
+```text
+assignment9/class-diagram/library-class-diagram.md
+```
+
+---
+
+## Reflection
+
+The reflection discusses:
+- Challenges faced
+- Alignment with previous assignments
+- Trade-offs in object-oriented design
+- Lessons learned
+
+Location:
+```text
+assignment9/reflection/assignment9-reflection.md
+```
+
+---
+
+## Technologies Used
+
+- Mermaid.js
+- Markdown
+- GitHub
+- Git Version Control
+- UML Modeling
+
+---
+
+## Assignment 9 Repository Structure
+
+```text
+assignment9/
+│
+├── domain-model/
+│   └── domain-model.md
+│
+├── class-diagram/
+│   └── library-class-diagram.md
+│
+└── reflection/
+    └── assignment9-reflection.md
+```
