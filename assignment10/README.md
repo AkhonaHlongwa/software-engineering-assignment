@@ -703,3 +703,115 @@ License details available in:
 ```text
 LICENSE
 ```
+
+
+# Assignment 15 — Docker Containerization & Deployment
+
+## Overview
+
+This assignment focused on containerizing the Rust backend application using Docker and Docker Compose.
+
+The implementation includes:
+- Multi-stage Docker builds
+- Docker Compose orchestration
+- Environment variable configuration
+- Deployment documentation
+- Containerized API execution
+
+---
+
+# Docker Files
+
+| File | Purpose |
+|---|---|
+| Dockerfile | Container image definition |
+| docker-compose.yml | Container orchestration |
+| .dockerignore | Exclude unnecessary files |
+| .env | Environment configuration |
+| DEPLOYMENT.md | Deployment instructions |
+
+---
+
+# Docker Features
+
+Implemented features:
+- Multi-stage Rust builds
+- Optimized runtime containers
+- Port mapping
+- Environment variable support
+- Automated container startup
+
+---
+
+# Running the Application
+
+## Build Docker Image
+
+```bash
+docker build -t rust-backend-api .
+```
+
+---
+
+## Start Containers
+
+```bash
+docker compose up --build
+```
+
+---
+
+## Access API
+
+```text
+http://localhost:3000
+```
+
+Swagger endpoints:
+
+```text
+http://localhost:3000/swagger-ui
+```
+
+or
+
+```text
+http://localhost:3000/docs
+```
+
+---
+
+# Benefits of Containerization
+
+Docker containerization provides:
+- portability
+- deployment consistency
+- scalability
+- easier collaboration
+- simplified DevOps workflows
+
+---
+
+# Screenshots
+
+### Docker Build Success
+```text
+screenshots/docker-build-success.png
+```
+
+### Docker Compose Running
+```text
+screenshots/docker-compose-running.png
+```
+
+---
+
+# Future Improvements
+
+Planned future deployment enhancements:
+- PostgreSQL container support
+- Redis integration
+- Kubernetes deployment
+- Cloud deployment automation
+- HTTPS reverse proxy
+- Automated CI/CD deployment
