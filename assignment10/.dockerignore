@@ -1,0 +1,8 @@
+target
+.git
+.github
+Dockerfile
+docker-compose.yml
+.env
+README.md
+screenshots

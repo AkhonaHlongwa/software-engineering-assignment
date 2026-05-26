@@ -1,0 +1,14 @@
+version: "3.9"
+
+services:
+  rust-api:
+    build: .
+    container_name: rust-backend-container
+
+    ports:
+      - "3000:3000"
+
+    env_file:
+      - .env
+
+    restart: unless-stopped
