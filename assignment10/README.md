@@ -524,3 +524,182 @@ Potential future enhancements:
 - Security scanning
 - Code coverage reporting
 - Automated releases
+
+
+
+# Assignment 14 — Open Source Collaboration Preparation
+
+## Overview
+
+This assignment prepares the repository for open-source collaboration by improving onboarding documentation, contribution workflows, roadmap planning, and repository maintainability.
+
+The repository now includes:
+- Contributor onboarding documentation
+- Open-source licensing
+- Feature request issue tracking
+- Future roadmap planning
+- Peer collaboration preparation
+
+---
+
+# Getting Started
+
+## Prerequisites
+
+Before running the project, install:
+
+| Tool | Purpose |
+|---|---|
+| Rust | Main programming language |
+| Cargo | Rust package manager |
+| Git | Version control |
+| GitHub Account | Collaboration & CI/CD |
+
+---
+
+## Install Rust
+
+Install Rust from:
+
+```text
+https://www.rust-lang.org/tools/install
+```
+
+Verify installation:
+
+```bash
+rustc --version
+cargo --version
+```
+
+---
+
+## Clone Repository
+
+```bash
+git clone https://github.com/YOUR_USERNAME/software-engineering-assignment.git
+```
+
+---
+
+## Open Project
+
+```bash
+cd software-engineering-assignment/assignment10
+```
+
+---
+
+## Build Project
+
+```bash
+cargo build
+```
+
+---
+
+## Run Tests
+
+```bash
+cargo test
+```
+
+---
+
+## Run Application
+
+```bash
+cargo run
+```
+
+---
+
+# Features for Contribution
+
+The following areas are recommended for future contributors:
+
+| Feature | Difficulty | Type |
+|---|---|---|
+| Redis caching | Intermediate | Performance |
+| JWT authentication | Intermediate | Security |
+| Docker deployment | Beginner | DevOps |
+| PostgreSQL integration | Advanced | Database |
+| Kubernetes deployment | Advanced | Cloud |
+| Frontend dashboard | Intermediate | UI/UX |
+| Logging system | Beginner | Monitoring |
+| Code coverage reports | Beginner | Testing |
+
+---
+
+# Open Source Documentation
+
+| File | Purpose |
+|---|---|
+| CONTRIBUTING.md | Contributor onboarding |
+| ROADMAP.md | Future development plans |
+| PROTECTION.md | Branch protection rules |
+| LICENSE | Open-source licensing |
+| CHANGELOG.md | Project progress tracking |
+
+---
+
+# Contribution Workflow
+
+Contributors should:
+1. Fork the repository
+2. Create a feature branch
+3. Run tests locally
+4. Submit a pull request
+5. Wait for CI checks to pass
+
+---
+
+# GitHub Labels
+
+Implemented labels:
+- feature-request
+- enhancement planning
+- future improvements
+
+---
+
+# Collaboration Goals
+
+This project aims to demonstrate:
+- clean software architecture
+- collaborative development
+- CI/CD workflows
+- open-source readiness
+- enterprise software engineering practices
+
+---
+
+# Repository Roadmap
+
+Future improvements are documented in:
+
+```text
+ROADMAP.md
+```
+
+---
+
+# Contribution Guidelines
+
+Contributor onboarding instructions are available in:
+
+```text
+CONTRIBUTING.md
+```
+
+---
+
+# License
+
+This project uses the MIT License.
+
+License details available in:
+
+```text
+LICENSE
+```
